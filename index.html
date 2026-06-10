@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comedy by Toby — Fusion Masala Comedy for the Modern Desi Diaspora</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: '#0A1128',
+        'navy-card': '#111C3A',
+        orange: '#D9480F',
+        terracotta: '#C94A29',
+        cream: '#F8F9FA',
+      },
+      fontFamily: {
+        display: ['Playfair Display', 'serif'],
+        body: ['Plus Jakarta Sans', 'sans-serif'],
+      },
+    }
+  }
+}
+</script>
+<style>
+  body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .font-display { font-family: 'Playfair Display', serif; }
+  #mobile-menu { display: none; }
+  #mobile-menu.open { display: flex; }
+  @keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
+  .fade-up { animation: fadeUp 0.5s ease forwards; }
+</style>
+</head>
+<body class="bg-[#0A1128] text-[#F8F9FA] overflow-x-hidden font-body">
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-[#0A1128]/80 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-5 md:px-10 flex items-center justify-between h-16">
+    <a href="#" class="font-display text-xl font-bold">Comedy <span class="text-[#D9480F] italic">by Toby.</span></a>
+    <nav class="hidden md:flex items-center gap-7">
+      <a href="#story" class="text-white/60 hover:text-white text-sm font-medium tracking-widest uppercase transition-colors duration-200">About</a>
+      <a href="#packages" class="text-white/60 hover:text-white text-sm font-medium tracking-widest uppercase transition-colors duration-200">Packages</a>
+      <a href="#shows" class="text-white/60 hover:text-white text-sm font-medium tracking-widest uppercase transition-colors duration-200">Events</a>
+      <a href="#book" class="border border-[#D9480F] text-[#D9480F] hover:bg-[#D9480F] hover:text-white px-5 py-2 rounded text-sm font-bold tracking-wider uppercase transition-all duration-200">Book Now</a>
+    </nav>
+    <button id="menu-btn" class="md:hidden text-white/70 hover:text-white" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="md:hidden flex-col px-5 pb-4 gap-3 border-t border-white/5 pt-3">
+    <a href="#story" onclick="document.getElementById('mobile-menu').classList.remove('open')" class="text-white/70 text-sm font-medium tracking-widest uppercase py-2 block">About</a>
+    <a href="#packages" onclick="document.getElementById('mobile-menu').classList.remove('open')" class="text-white/70 text-sm font-medium tracking-widest uppercase py-2 block">Packages</a>
+    <a href="#shows" onclick="document.getElementById('mobile-menu').classList.remove('open')" class="text-white/70 text-sm font-medium tracking-widest uppercase py-2 block">Events</a>
+    <a href="#book" onclick="document.getElementById('mobile-menu').classList.remove('open')" class="bg-[#D9480F] text-white text-sm font-bold tracking-wider uppercase py-3 px-6 rounded block text-center mt-2">Book Now</a>
+  </div>
+</header>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section id="hero" class="min-h-screen pt-16 flex items-center">
+  <div class="max-w-7xl mx-auto px-5 md:px-10 w-full py-16">
+    <div class="flex flex-col md:grid md:grid-cols-5 gap-12 md:gap-16 items-center">
+
+      <!-- LEFT 60% -->
+      <div class="md:col-span-3 flex flex-col items-start fade-up">
+        <img src="logo.png" alt="Comedy by Toby" class="h-28 w-auto mb-8">
+        <p class="text-[#D9480F] text-xs font-bold tracking-[0.25em] uppercase mb-4">Private Events · Weddings · Corporate</p>
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-5 text-[#F8F9FA]">
+          Fusion Masala Comedy<br>for the Modern<br><em class="text-[#D9480F]">Desi Diaspora.</em>
+        </h1>
+        <p class="text-white/60 text-lg font-light mb-8 max-w-lg leading-relaxed">
+          DESI'gned for your palate — choose your spice level.
+        </p>
+        <div class="grid grid-cols-2 gap-x-10 gap-y-3 mb-10">
+          <div class="flex items-center gap-2 text-white/75 text-sm"><span class="text-[#D9480F] font-bold text-base">—</span>Private Events</div>
+          <div class="flex items-center gap-2 text-white/75 text-sm"><span class="text-[#D9480F] font-bold text-base">—</span>Corporate Shows</div>
+          <div class="flex items-center gap-2 text-white/75 text-sm"><span class="text-[#D9480F] font-bold text-base">—</span>Sangeet</div>
+          <div class="flex items-center gap-2 text-white/75 text-sm"><span class="text-[#D9480F] font-bold text-base">—</span>Stage Events</div>
+          <div class="flex items-center gap-2 text-white/75 text-sm"><span class="text-[#D9480F] font-bold text-base">—</span>Bachelor/Bachelorette</div>
+          <div class="flex items-center gap-2 text-white/75 text-sm"><span class="text-[#D9480F] font-bold text-base">—</span>Live Stand-Up</div>
+        </div>
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 w-full sm:w-auto">
+          <a href="#packages" class="bg-[#D9480F] hover:bg-[#C94A29] text-white font-bold text-sm tracking-wider uppercase px-8 py-4 rounded-lg transition-all duration-200 shadow-lg shadow-[#D9480F]/20 w-full sm:w-auto text-center">
+            Choose Your Spice Level 🌶️
+          </a>
+          <a href="#book" class="text-white/60 hover:text-[#D9480F] text-sm font-medium border-b border-white/20 hover:border-[#D9480F] pb-0.5 transition-all duration-200">
+            Book Toby →
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT 40% -->
+      <div class="md:col-span-2 relative flex items-center justify-center w-full">
+        <div class="absolute -z-10 w-80 h-80 rounded-full bg-[#D9480F] opacity-10 blur-3xl"></div>
+        <div class="relative w-full max-w-xs md:max-w-full md:hover:scale-105 transition-transform duration-300">
+          <img src="photo.png" alt="Toby Rao performing standup comedy" class="w-full h-auto object-cover">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ STORY / THE RECIPE ═══════════ -->
+<section id="story" class="py-24 px-5 md:px-10 border-t border-white/5">
+  <div class="max-w-6xl mx-auto">
+    <p class="text-[#D9480F] text-xs font-bold tracking-[0.25em] uppercase mb-3">About</p>
+    <h2 class="font-display text-4xl md:text-5xl font-bold text-[#F8F9FA] mb-14">From dropping beats<br>to dropping punchlines.</h2>
+    <div class="grid md:grid-cols-2 gap-14 items-start">
+      <div class="space-y-5 text-white/65 font-light leading-relaxed text-base">
+        <p>Born in Jamshedpur, raised across four states, and eventually planted in the DMV — Toby Rao spent his early career doing everything the traditional path demanded. Engineering? Checked. MBA? Double-checked. Aunties satisfied? Temporarily.</p>
+        <p>Then he discovered the real talent: walking into any room on earth and knowing, within 30 seconds, exactly what would make it laugh. Fluent in seven languages and two decades of South Asian weddings, Toby turned a lifetime of cultural code-switching into a comedy superpower.</p>
+        <p>Seven years as an elite DMV DJ. Radio Zindagi host. Wedding MC for hundreds of events. Now, he does it with a mic instead of a mixer — and the crowd never notices the difference. They just can't stop laughing.</p>
+      </div>
+      <div class="space-y-8">
+        <blockquote class="border-l-4 border-[#D9480F] pl-7 py-1">
+          <p class="font-display text-xl md:text-2xl italic text-[#F8F9FA] leading-snug mb-4">"Always the funniest person in the room. Now it's official."</p>
+          <cite class="text-white/35 text-xs not-italic tracking-[0.15em] uppercase">— 11 Years. Nightclubs. Weddings. Stages.</cite>
+        </blockquote>
+        <blockquote class="border-l-4 border-white/10 pl-7 py-1">
+          <p class="font-display text-lg italic text-white/70 leading-snug mb-3">"The kind of performance people are still talking about long after the show ends."</p>
+          <cite class="text-white/35 text-xs not-italic tracking-[0.15em] uppercase">— Rajesh Bhat</cite>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ STATS ═══════════ -->
+<section class="py-16 px-5 md:px-10 bg-[#111C3A]/40 border-y border-white/5">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+    <div>
+      <p class="font-display text-5xl font-bold text-[#D9480F] mb-3">15+</p>
+      <p class="text-white/50 text-sm font-light leading-relaxed max-w-xs mx-auto">Years successfully reading rooms, dropping beats, and dodging flying sandals from traditional Aunties.</p>
+    </div>
+    <div class="md:border-x border-white/10">
+      <p class="font-display text-5xl font-bold text-[#D9480F] mb-3">3</p>
+      <p class="text-white/50 text-sm font-light leading-relaxed max-w-xs mx-auto">Spice levels. Customized heat profiles tailored perfectly to your crowd's digestive system for comedy.</p>
+    </div>
+    <div>
+      <p class="font-display text-5xl font-bold text-[#D9480F] mb-3">5★</p>
+      <p class="text-white/50 text-sm font-light leading-relaxed max-w-xs mx-auto">Universally loved by corporate HR departments, emotional brides, and strict Desi fathers alike.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PACKAGES / THE MENU ═══════════ -->
+<section id="packages" class="py-24 px-5 md:px-10">
+  <div class="max-w-6xl mx-auto">
+    <p class="text-[#D9480F] text-xs font-bold tracking-[0.25em] uppercase mb-3">Packages</p>
+    <h2 class="font-display text-4xl md:text-5xl font-bold text-[#F8F9FA] mb-3">Full Dhamaal Comedy — Your Way.</h2>
+    <p class="text-white/50 font-light mb-14 max-w-xl">From a clean family showcase to an unfiltered late-night vibe. You set the rating, we bring the energy.</p>
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-[#111C3A]/50 border border-white/5 backdrop-blur-sm rounded-2xl overflow-hidden flex flex-col hover:-translate-y-2 hover:shadow-[0_0_24px_rgba(217,72,15,0.12)] transition-all duration-300">
+        <div class="bg-[#8B7355]/30 border-b border-white/5 px-6 py-3">
+          <span class="text-[#C9A87A] text-xs font-bold tracking-[0.2em] uppercase">Rated G</span>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <h3 class="font-display text-xl font-bold text-[#F8F9FA] mb-4">The Universal Set</h3>
+          <p class="text-white/55 text-sm leading-relaxed flex-1">Clean, sharp, universally funny. Observational humor, cultural references, and crowd work that works for grandma, the kids, and everyone in between.</p>
+          <p class="text-white/30 text-xs italic mt-5 mb-6 border-t border-white/5 pt-5">Cleaner than OTT. Grandma-approved.</p>
+          <a href="#book" class="block text-center border border-[#D9480F]/50 text-[#D9480F] hover:bg-[#D9480F] hover:text-white text-sm font-bold tracking-wider uppercase py-3 rounded-lg transition-all duration-200">Order This Vibe</a>
+        </div>
+      </div>
+
+      <!-- Card 2 (featured) -->
+      <div class="bg-[#111C3A]/50 border border-[#D9480F]/30 backdrop-blur-sm rounded-2xl overflow-hidden flex flex-col hover:-translate-y-2 hover:shadow-[0_0_24px_rgba(217,72,15,0.25)] transition-all duration-300 relative">
+        <div class="bg-[#D9480F] px-6 py-3">
+          <span class="text-white text-xs font-bold tracking-[0.2em] uppercase">Rated PG-13 · Most Popular</span>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <h3 class="font-display text-xl font-bold text-[#F8F9FA] mb-4">The Diaspora Mix</h3>
+          <p class="text-white/55 text-sm leading-relaxed flex-1">Personalized humor built from stories collected from family and friends. You give me the intel — I write the jokes. Sharp, relatable, and culturally deep without crossing the line. Everyone leaves crying laughing.</p>
+          <p class="text-white/30 text-xs italic mt-5 mb-6 border-t border-white/5 pt-5">Perfect for weddings, anniversaries & milestone birthdays.</p>
+          <a href="#book" class="block text-center bg-[#D9480F] hover:bg-[#C94A29] text-white text-sm font-bold tracking-wider uppercase py-3 rounded-lg transition-all duration-200 shadow-lg shadow-[#D9480F]/20">Order This Vibe</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#111C3A]/50 border border-white/5 backdrop-blur-sm rounded-2xl overflow-hidden flex flex-col hover:-translate-y-2 hover:shadow-[0_0_24px_rgba(217,72,15,0.12)] transition-all duration-300">
+        <div class="bg-[#C94A29]/30 border-b border-white/5 px-6 py-3">
+          <span class="text-[#C94A29] text-xs font-bold tracking-[0.2em] uppercase">Rated R</span>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <h3 class="font-display text-xl font-bold text-[#F8F9FA] mb-4">The Unfiltered Vibe</h3>
+          <p class="text-white/55 text-sm leading-relaxed flex-1">Bachelor parties, bachelorette nights, and exclusive after-parties. Edgy, sharp, and brilliantly witty. High energy and deeply honest — but always clever, never crude.</p>
+          <p class="text-white/30 text-xs italic mt-5 mb-6 border-t border-white/5 pt-5">Adult-rated humor. High energy guaranteed.</p>
+          <a href="#book" class="block text-center border border-[#D9480F]/50 text-[#D9480F] hover:bg-[#D9480F] hover:text-white text-sm font-bold tracking-wider uppercase py-3 rounded-lg transition-all duration-200">Order This Vibe</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TESTIMONIALS ═══════════ -->
+<section class="py-24 px-5 md:px-10 bg-[#111C3A]/30 border-y border-white/5">
+  <div class="max-w-6xl mx-auto">
+    <p class="text-[#D9480F] text-xs font-bold tracking-[0.25em] uppercase mb-3">What People Say</p>
+    <h2 class="font-display text-4xl md:text-5xl font-bold text-[#F8F9FA] mb-14">The crowd speaks.</h2>
+    <div id="testimonials-grid" class="grid md:grid-cols-2 gap-6">
+      <p class="text-white/25 text-sm col-span-2 py-8 text-center">Loading testimonials...</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ GALLERY / TASTE TEST ═══════════ -->
+<section id="shows-gallery" class="py-24 px-5 md:px-10">
+  <div class="max-w-6xl mx-auto">
+    <p class="text-[#D9480F] text-xs font-bold tracking-[0.25em] uppercase mb-3">Events</p>
+    <h2 class="font-display text-4xl md:text-5xl font-bold text-[#F8F9FA] mb-4">Live on Stage.</h2>
+    <p class="text-white/50 mb-14 font-light">Catching the flavor live on stage.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="relative group rounded-2xl overflow-hidden aspect-[3/4]">
+        <img src="https://images.unsplash.com/photo-1585699324551-f6c309eedeca?w=600&q=80" alt="Comedy show stage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0A1128]/80 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-white font-semibold text-sm">Live Stand-Up</p>
+          <p class="text-white/50 text-xs">DMV · 2025</p>
+        </div>
+      </div>
+      <div class="relative group rounded-2xl overflow-hidden aspect-[3/4] md:mt-10">
+        <img src="https://images.unsplash.com/photo-1603739903239-8b6e64c3b185?w=600&q=80" alt="Crowd laughing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0A1128]/80 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-white font-semibold text-sm">Private Event</p>
+          <p class="text-white/50 text-xs">Ashburn VA · 2025</p>
+        </div>
+      </div>
+      <div class="relative group rounded-2xl overflow-hidden aspect-[3/4]">
+        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&q=80" alt="Stage performance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0A1128]/80 to-transparent"></div>
+        <div class="absolute bottom-0 left-0 p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <p class="text-white font-semibold text-sm">Corporate Show</p>
+          <p class="text-white/50 text-xs">Northern Virginia · 2026</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PAST SHOWS ═══════════ -->
+<section id="shows" class="py-24 px-5 md:px-10 bg-[#111C3A]/30 border-y border-white/5">
+  <div class="max-w-5xl mx-auto">
+    <p class="text-[#D9480F] text-xs font-bold tracking-[0.25em] uppercase mb-3">On Stage</p>
+    <h2 class="font-display text-4xl md:text-5xl font-bold text-[#F8F9FA] mb-14">Past Shows.</h2>
+    <div id="shows-list" class="divide-y divide-white/5">
+      <p class="text-white/25 text-sm py-8 text-center">Loading shows...</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ BOOK / CONTACT ═══════════ -->
+<section id="book" class="py-24 px-5 md:px-10">
+  <div class="max-w-2xl mx-auto">
+    <div class="text-center mb-12">
+      <img src="logo.png" alt="Comedy by Toby" class="h-20 w-auto mx-auto mb-6 opacity-90">
+      <p class="text-[#D9480F] text-xs font-bold tracking-[0.25em] uppercase mb-4">Book Toby</p>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-[#F8F9FA] mb-4">Let's cook up something unforgettable.</h2>
+      <p class="text-white/50 font-light text-base leading-relaxed">No matter the venue, we tailor the heat to match the room.<br>Your event. Your moment.</p>
+    </div>
+
+    <!-- Form -->
+    <div class="bg-[#111C3A]/50 border border-white/5 rounded-2xl p-8 md:p-10 space-y-5">
+      <p class="text-white/60 text-sm text-center mb-6">Let's cook up something unforgettable. Drop your event details below.</p>
+      <div>
+        <label class="text-white/50 text-xs font-bold tracking-widest uppercase block mb-2">Your Name</label>
+        <input type="text" placeholder="Priya Sharma" class="w-full bg-[#0A1128]/80 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder-white/25 focus:outline-none focus:border-[#D9480F]/50 transition-colors">
+      </div>
+      <div>
+        <label class="text-white/50 text-xs font-bold tracking-widest uppercase block mb-2">Email Address</label>
+        <input type="email" placeholder="priya@example.com" class="w-full bg-[#0A1128]/80 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder-white/25 focus:outline-none focus:border-[#D9480F]/50 transition-colors">
+      </div>
+      <div>
+        <label class="text-white/50 text-xs font-bold tracking-widest uppercase block mb-2">Event Date</label>
+        <input type="date" class="w-full bg-[#0A1128]/80 border border-white/10 rounded-lg px-4 py-3 text-white/70 text-sm focus:outline-none focus:border-[#D9480F]/50 transition-colors">
+      </div>
+      <div>
+        <label class="text-white/50 text-xs font-bold tracking-widest uppercase block mb-2">Select Your Desired Rating</label>
+        <select class="w-full bg-[#0A1128]/80 border border-white/10 rounded-lg px-4 py-3 text-white/70 text-sm focus:outline-none focus:border-[#D9480F]/50 transition-colors appearance-none">
+          <option value="" class="bg-[#111C3A]">Choose your spice level...</option>
+          <option value="g" class="bg-[#111C3A]">Rated G — The Universal Set (Grandma-approved)</option>
+          <option value="pg13" class="bg-[#111C3A]">Rated PG-13 — The Diaspora Mix (Wedding-perfect)</option>
+          <option value="r" class="bg-[#111C3A]">Rated R — The Unfiltered Vibe (Adults only)</option>
+        </select>
+      </div>
+      <a href="mailto:toby.rao@gmail.com" class="block w-full text-center bg-[#D9480F] hover:bg-[#C94A29] text-white font-bold text-sm tracking-widest uppercase py-4 rounded-lg transition-all duration-200 shadow-lg shadow-[#D9480F]/20 mt-2">
+        Send My Event Details →
+      </a>
+      <p class="text-white/25 text-xs text-center pt-2">Or call directly: <a href="tel:7038612037" class="text-white/40 hover:text-[#D9480F]">(703) 861-2037</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="border-t border-white/5 py-10 px-5 md:px-10">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-5">
+    <span class="font-display text-lg font-bold">Comedy <span class="text-[#D9480F] italic">by Toby.</span></span>
+    <p class="text-white/25 text-sm text-center">Formerly your DJ. Now ruining your speeches — in the best way.</p>
+    <p class="text-white/20 text-xs">© 2026 Comedy by Toby · Ashburn, VA</p>
+  </div>
+</footer>
+
+
+<!-- Google Sheets: Testimonials -->
+<script>
+(function(){
+  const SHEET_ID = "1N9hv6Zl4HNXuYVfaGswy3rd33xyXbue6TaKoq2EasTg";
+  const GID = "908817405";
+  const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${GID}`;
+
+  fetch(CSV_URL)
+    .then(r => r.text())
+    .then(csv => {
+      const lines = csv.trim().split('\n');
+      // find header row
+      let headerIdx = lines.findIndex(l => l.toLowerCase().includes('name'));
+      if (headerIdx === -1) headerIdx = 0;
+      const rows = lines.slice(headerIdx + 1);
+
+      const cards = [];
+      rows.forEach(line => {
+        // Handle quoted CSV fields properly
+        const cols = [];
+        let current = '';
+        let inQuotes = false;
+        for (let i = 0; i < line.length; i++) {
+          if (line[i] === '"') {
+            inQuotes = !inQuotes;
+          } else if (line[i] === ',' && !inQuotes) {
+            cols.push(current.trim());
+            current = '';
+          } else {
+            current += line[i];
+          }
+        }
+        cols.push(current.trim());
+
+        const name   = (cols[0] || '').trim();
+        const title  = (cols[1] || '').trim();
+        const quote  = (cols[2] || '').trim();
+        const active = (cols[3] || '').trim().toLowerCase();
+
+        if (!name || !quote || active !== 'yes') return;
+
+        const authorLine = title ? `${name}, ${title}` : name;
+        cards.push(`
+          <div class="testimonial-card">
+            <p class="testimonial-text">"${quote}"</p>
+            <p class="testimonial-author">— ${authorLine}</p>
+          </div>
+        `);
+      });
+
+      const grid = document.getElementById('testimonials-grid');
+      if (cards.length > 0) {
+        grid.innerHTML = cards.join('');
+      } else {
+        grid.innerHTML = '';
+      }
+    })
+    .catch(() => {
+      document.getElementById('testimonials-grid').innerHTML = '';
+    });
+})();
+</script>
+
+<!-- Google Sheets: Shows -->
+<script>
+(function(){
+  const SHEET_ID = "1N9hv6Zl4HNXuYVfaGswy3rd33xyXbue6TaKoq2EasTg";
+  const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv`;
+
+  function makeRow(date, name, type) {
+    return `<div class="show-row"><span class="show-year">${date}</span><span class="show-name">${name}</span><span class="show-type">${type}</span></div>`;
+  }
+
+  fetch(CSV_URL)
+    .then(r => r.text())
+    .then(csv => {
+      const lines = csv.trim().split('\n').map(l => l.split(','));
+      // find header row
+      let headerIdx = lines.findIndex(r => r.some(c => c.trim().toLowerCase() === 'date'));
+      if (headerIdx === -1) headerIdx = 0;
+      const rows = lines.slice(headerIdx + 1);
+
+      const upcoming = [];
+      const past = [];
+
+      rows.forEach(cols => {
+        // cols may have leading empty col
+        const offset = cols[0].trim() === '' ? 1 : 0;
+        const date   = (cols[offset]   || '').trim();
+        const show   = (cols[offset+1] || '').trim();
+        const type   = (cols[offset+2] || '').trim();
+        const status = (cols[offset+3] || '').trim().toLowerCase();
+        if (!show) return;
+        if (status === 'upcoming') upcoming.push({date, show, type});
+        else past.push({date, show, type});
+      });
+
+      // Render upcoming
+      if (upcoming.length > 0) {
+        document.getElementById('upcoming-section').style.display = 'block';
+        document.getElementById('upcoming-list').innerHTML = upcoming.map(s => makeRow(s.date, s.show, s.type)).join('');
+      }
+
+      // Render past
+      if (past.length > 0) {
+        if (upcoming.length > 0) document.getElementById('past-label').style.display = 'block';
+        document.getElementById('past-list').innerHTML = past.map(s => makeRow(s.date, s.show, s.type)).join('');
+      } else {
+        document.getElementById('past-list').innerHTML = '';
+      }
+    })
+    .catch(() => {
+      document.getElementById('past-list').innerHTML = '<p style="color:#8a8070;font-size:0.9rem">Could not load shows.</p>';
+    });
+})();
+</script>
+
+<script>
+// Wire sheet data into Tailwind elements
+(function() {
+  function wireTestimonials() {
+    const grid = document.getElementById('testimonials-grid');
+    if (!grid) return;
+    const cards = grid.querySelectorAll('.testimonial-card');
+    if (cards.length === 0) return setTimeout(wireTestimonials, 600);
+    
+    const data = [];
+    cards.forEach(card => {
+      const quote = card.querySelector('blockquote, .quote')?.textContent?.trim() ||
+                    card.querySelector('p')?.textContent?.trim() || '';
+      const name = card.querySelector('.name, cite, strong, h3, h4')?.textContent?.trim() || '';
+      const title = card.querySelector('.title, .role, small')?.textContent?.trim() || '';
+      data.push({quote, name, title});
+    });
+    
+    grid.innerHTML = '';
+    data.forEach(d => {
+      if (!d.quote) return;
+      const clean = d.quote.replace(/[\u201c\u201d""]/g, '').trim();
+      const initial = d.name ? d.name[0].toUpperCase() : '★';
+      const div = document.createElement('div');
+      div.className = 'bg-[#111C3A]/50 border border-white/5 rounded-2xl p-8 flex flex-col';
+      div.innerHTML = `
+        <svg class="w-8 h-8 text-[#D9480F] opacity-40 mb-4" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8C6.7 8 4 10.7 4 14s2.7 6 6 6c.4 0 .7 0 1-.1C10.4 21.7 9.3 23.7 8 25h4c3.3-3.3 4-7.3 4-11 0-3.3-2.7-6-6-6zm14 0c-3.3 0-6 2.7-6 6s2.7 6 6 6c.4 0 .7 0 1-.1C24.4 21.7 23.3 23.7 22 25h4c3.3-3.3 4-7.3 4-11 0-3.3-2.7-6-6-6z"/></svg>
+        <p class="text-white/70 text-base leading-relaxed italic flex-1 mb-6">"${clean}"</p>
+        <div class="flex items-center gap-3 border-t border-white/5 pt-5">
+          <div class="w-9 h-9 rounded-full bg-[#D9480F]/20 flex items-center justify-center text-[#D9480F] text-sm font-bold flex-shrink-0">${initial}</div>
+          <div>
+            <p class="text-[#F8F9FA] font-semibold text-sm">${d.name}</p>
+            <p class="text-white/35 text-xs">${d.title}</p>
+          </div>
+        </div>`;
+      grid.appendChild(div);
+    });
+  }
+
+  function wireShows() {
+    const list = document.getElementById('shows-list');
+    if (!list) return;
+    const rows = list.querySelectorAll('.show-row, tr, li, [data-show]');
+    if (rows.length === 0) return setTimeout(wireShows, 600);
+    
+    const data = [];
+    rows.forEach(row => {
+      const cells = row.querySelectorAll('td, span, div, p');
+      const texts = Array.from(cells).map(c => c.textContent.trim()).filter(t => t.length > 0);
+      if (texts.length >= 2) data.push(texts);
+    });
+    
+    list.innerHTML = '';
+    data.forEach(texts => {
+      const date = texts[0] || '';
+      const show = texts[1] || '';
+      const type = texts[2] || '';
+      const status = (texts[3] || '').toLowerCase();
+      const isUpcoming = status === 'upcoming';
+      const div = document.createElement('div');
+      div.className = 'py-5 flex flex-wrap md:flex-nowrap items-center justify-between gap-4';
+      div.innerHTML = `
+        <div class="flex-1 min-w-0">
+          <p class="text-[#F8F9FA] font-medium text-sm mb-1">${show}</p>
+          <p class="text-white/35 text-xs">${date}</p>
+        </div>
+        <div class="flex items-center gap-3 flex-shrink-0">
+          <span class="text-white/40 text-xs border border-white/10 px-3 py-1 rounded-full">${type}</span>
+          <span class="text-xs px-3 py-1 rounded-full ${isUpcoming ? 'bg-[#D9480F]/20 text-[#D9480F]' : 'bg-white/5 text-white/25'}">${texts[3] || ''}</span>
+        </div>`;
+      list.appendChild(div);
+    });
+  }
+
+  setTimeout(wireTestimonials, 800);
+  setTimeout(wireShows, 800);
+})();
+</script>
+
+</body>
+</html>
